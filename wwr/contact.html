@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>contact rafting company</title>  
+    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project."> 
+    <meta name="author" content="Olusegun Famiyesin">   
+    <link rel="stylesheet" href="styles/rafting.css"> 
+</head>
+<body>
+    <header> 
+        <div class="header-grid">
+            <img src="images/logo.png" alt="Rafting Adventures">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section id="company-information">
+            <h1>Contact us</h1>
+            <div class="address">
+                <p>813 East Pkwy, Gatlinburg, TN 37738, United States</p>
+            </div>
+            <div class="phone">
+                <p>Phone: 555-123-4567</p>
+            </div>
+            <div class="email">
+                <p>Email: info@Raftingadventures.com</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.560432589654!2d-83.49760380578824!3d35.72324591116027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885956120065a54d%3A0xcb9ed03fccbb3a04!2sRafting%20In%20the%20Smokies%20-%20Reservation%20Office!5e0!3m2!1sen!2sng!4v1697121309741!5m2!1sen!2sng" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="employees">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <h3 class="name">James Blanks</h3>
+                <p class="title">River Guide</p>
+
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <h3 class="name">Helen Bedard</h3>
+                <p class="title">Trip Leader</p>
+
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <h3 class="name">Teresa Smith</h3>
+                <p class="title">Office Administrator</p>
+
+            </div> 
+            <div class="employee">
+                <img class="employee-image" src="images/employee4.jpg" alt="Employee 4">
+                <h3 class="name">Robert Wilson</h3>
+                <p class="title">IT Administrator</p>
+            </div>
+            <div class="employee">
+                <img class="employee-image" src="images/employee5.jpg" alt="Employee 5">
+                <h3 class="name">Emily Taylor</h3>
+                <p class="title">Accountant</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" checked>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label for="newsletter">Please subscribe to our monthly newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Rafting Adventures | Olusegun Famiyesin</p>
+                <a href="https://raw.githubusercontent.com/Famiyesinolusegun/wdd130/main/images/Wireframe.jpg">                 
+                    <img src="images/Wireframe.jpg" alt="Wireframe">    
+    </footer>
+</body>
+</html>

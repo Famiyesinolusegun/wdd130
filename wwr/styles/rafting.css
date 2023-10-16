@@ -21,19 +21,23 @@
 
 body {
   margin: 10%;
-  padding: 10px;
+  padding: 0;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
+p {
+  color: rgb(86, 86, 86);
+}
 
 nav {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  text-align: right;
 }
 
 nav a {
@@ -53,7 +57,48 @@ header {
   text-align: center; 
   font-size: 30px 
    
+} 
+ 
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
+
+.header-grid img {
+  max-width: 100%;
+}
+
+.header-grid nav {
+  text-align: right;
+}
+
+.header-grid a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .header-grid {
+    grid-template-columns: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-grid nav {
+    
+    text-align: center;
+  }
+
+
+  .header-grid a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
 .hero {
   position: relative;
   margin-top: 1rem;
@@ -72,18 +117,18 @@ header {
   left: 350px;
   color: #fff8f8;
   text-align: center; 
-  font-size: 90px 
+  font-size: 80px
 }
 
 .hero article {
   position: absolute;
   bottom: 30px;
   left: 20px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   padding: 30px;
-  background-color: #4e4ea2;
+  background-color: #9283dc;
   color: #ffffff;
-  opacity: .9;
+ 
 }
 
 .hero article img {
@@ -103,7 +148,7 @@ header {
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   
 }
 
@@ -134,17 +179,17 @@ header {
 }
 
 .adventures-grid figure {
-  flex: 10% 20% 40%;
+  flex: 1 0 10%;
   margin: 0;
   text-align: center;
 }
 
 .adventures-grid img {
-  width: 90%;
+  width: 70%;
   height: auto;
   border-radius: 5px;
-  grid-template-columns: auto 1fr;
-  align-items: right;
+ 
+  
 }
 
 .adventures-grid figcaption {
@@ -167,7 +212,8 @@ footer a {
 }
 
 footer p {
-  font-size: 1.2em;
+  font-size: 1.2em; 
+  color: #ffffff;
 }
 
 footer a:hover {
@@ -177,10 +223,102 @@ footer a:hover {
 .sociallinks {
   display: flex;
   justify-content: flex-end; 
-  background-color: transparent;
+  background-color: transparent;  
+  
 }
 
 .sociallinks img {
   width: 30px;
  margin-left: 10px;
+} 
+ 
+#company-information{
+  margin: 20px 0; 
+  max-width: 800px; 
+  text-align: center;
 }
+
+.address, .phone, .email {
+  margin-bottom: 10px; 
+
+}
+
+#employees {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center; 
+
+}
+
+.employee {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px; 
+ 
+}
+
+.employee img {
+  width: 200px;
+  height:190px;
+  margin-bottom: 10px;   
+  border: 2px solid #4e4ea2;
+}
+
+.employee .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.employee .title {
+  font-style: italic; 
+  margin-top: 2px; 
+  
+}
+#contact-form {
+  margin: 20px auto;
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4e4ea2;
+  color: white;
+  border: none;
+  cursor: pointer;  
+  
+  
+}
+
+button[type="submit"]:hover {
+  background-color: #b2b6b2;
+}
+
+ 
