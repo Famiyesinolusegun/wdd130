@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu52xP.ttf) format('truetype');
+}
 /* Fonts */
 :root {
   --heading-font: "Roboto";
@@ -271,9 +277,8 @@ footer a:hover {
  margin-left: 5px;
 } 
  
-#company-information{
+#company-information {
   margin: 20px 0; 
-  max-width: auto; 
   text-align: center;
 }
 
@@ -351,7 +356,7 @@ button[type="submit"] {
   background-color: #4e4ea2;
   color: white;
   border: none;
-  cursor: pointer;  
+    
   
   
 }
@@ -395,57 +400,50 @@ button[type="submit"]:hover {
  
 
 /* Trip section styles */
-section {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 36px;
+.trip-section {
   margin-bottom: 20px;
-  color: #4e4ea2;
- 
+  column-count: 2;
+  column-gap: 20px;
 }
 
-section img {
+.trip-section h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: #4e4ea2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+
+.trip-section img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  margin-bottom: 5%;  
+  margin-bottom: 3%;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-section p {
+.trip-section p {
   font-size: 16px;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 10px;
+  text-align: center;
 }
-
-section a {
-  color: #4e4ea2;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section a:hover {
-  text-decoration: underline;
-}
- 
-
- 
  
 /* Trip table styles */
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 15px;
+  border: none;
   text-align: center;
 }
 
@@ -454,11 +452,13 @@ th {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
 }
 
 td {
   background-color: #f2f2f2;
   color: #333;
+  border-radius: 0 0 5px 5px;
 }
 
 tr:nth-child(even) td {
@@ -468,7 +468,6 @@ tr:nth-child(even) td {
 tr:hover td {
   background-color: #4e4ea2;
   color: #ffffff;
-  cursor: pointer;
 }
 
 /* Mobile Styles */
@@ -525,7 +524,7 @@ tr:hover td {
   padding: 5px;
   
   color: #ffffff;
-  width: 80%;
+  width: 200%;
   max-width: 500px; 
   text-align: center;
 }
@@ -587,7 +586,7 @@ tr:hover td {
   background-color: #4e4ea2;
   color: #fff;
   border: none;
-  cursor: pointer;
+  
 }
 
 /* Style for the call-to-action section */
@@ -656,4 +655,3 @@ tr:hover td {
 .grid-item a:hover {
   background-color: #b2b6b2;
 }
- 
